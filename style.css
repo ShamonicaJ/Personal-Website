@@ -1,0 +1,39 @@
+        /* CSS styles for the navigation bar starts here */
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center; /* Center text within the element */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullets for all unordered lists */
+            padding: 0;
+        }
+
+        nav li {
+            display: inline; /* Make the element inline */
+            margin: 0 10px;
+        }
+
+        nav a { /*is used to style anchor elements specifically within a <nav> element.*/
+            text-decoration: none;/* Remove underlines from links */
+            color: white;
+        }
+/* CSS styles for the image on main page starts here */
+main > img {
+    /* height: 500px; */
+    width: 300px;
+    float: right;
+    margin: 10px 0 10px 10px;
+}
+
+h2 {
+    color: #333; /* Text color */
+    font-size: 50px; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-align: center; /* Text alignment */
+}
+
+p {
+    font-size: 30px; /* Default font size */
+}
