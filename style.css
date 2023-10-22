@@ -112,16 +112,3 @@ footer {
 footer .media-link {
     height: 45px;
 }
-/* {
-    box-sizing: border-box;
-}
-/*img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: x-large;
-    margin: 0 5px;
-}
