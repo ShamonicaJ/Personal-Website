@@ -101,3 +101,27 @@ div {
     margin: 10px auto;
     padding: 1px;
 }
+
+footer {
+    background-color: #333; /* Background color of the footer */
+    color: white; /* Text color of the footer */
+    padding: 10px; /* Padding inside the footer */
+    border-top: 2px solid #333; /* Border at the top of the footer */
+}
+
+footer .media-link {
+    height: 45px;
+}
+/* {
+    box-sizing: border-box;
+}
+/*img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: x-large;
+    margin: 0 5px;
+}
