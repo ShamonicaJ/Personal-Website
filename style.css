@@ -15,11 +15,11 @@
             margin: 0 10px;
         }
 
-        nav a { /*is used to style anchor elements specifically within a <nav> element.*/
+        nav a { /*is used to style nav anchor elements.*/
             text-decoration: none;/* Remove underlines from links */
             color: white;
         }
-/* CSS styles for the image on main page starts here */
+/* CSS styles for the  main page starts here */
 main > img {
     /* height: 500px; */
     width: 300px;
@@ -36,4 +36,68 @@ h2 {
 
 p {
     font-size: 30px; /* Default font size */
+}
+
+
+/* CSS styles for the about page starts here */
+#about header {
+    font-weight: 300;
+    font-size: 2;
+}
+section {
+    border-top: 1px solid #0b0b0b;
+    font-size: 16px;
+}
+* {
+    box-sizing: border-box;
+}
+section {
+    display: block;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main {
+    min-height: 100vh;
+    padding: 25px 24px 96px;
+    color: rgb(5, 5, 5);
+    font-size: 25px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px; /* Adjust the margin to create space around the image */
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+/* CSS styles for the portfolio page starts here */
+* {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.project {
+    background: #d1cdcd;
+    color: #222;
+    margin: 10px auto;
+    padding: 1px;
 }
