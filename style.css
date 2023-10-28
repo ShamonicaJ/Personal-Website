@@ -1,118 +1,234 @@
-        /* CSS styles for the navigation bar starts here */
-        nav {
-            background-color: #333;
-            color: white;
-            text-align: center; /* Center text within the element */
-        }
-
-        nav ul {
-            list-style-type: none; /* Remove bullets for all unordered lists */
-            padding: 0;
-        }
-
-        nav li {
-            display: inline; /* Make the element inline */
-            margin: 0 10px;
-        }
-
-        nav a { /*is used to style nav anchor elements.*/
-            text-decoration: none;/* Remove underlines from links */
-            color: white;
-        }
-/* CSS styles for the  main page starts here */
-main > img {
-    width: 300px;
-    float: right;
-    margin: 10px 0 10px 10px;
+* {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  }
+  /* CSS styles for the home page starts here */
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    
+  }
+  .box{
+    height: 595px;
+    width: 440px;
+    background: transparent;
+    position: absolute; 
+    top: 73px; 
+    left: 375px; 
+    z-index: 1; 
+    margin: 0;
+    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
+}
+img{
+    position: absolute; 
+    top: 125px; 
+    left: 400px; 
+    z-index: 3; 
+    margin: 0;
 }
 
-h2 {
-    color: #333; /* Text color */
-    font-size: 50px; /* Font size */
-    font-weight: bold; /* Font weight */
-    text-align: center; /* Text alignment */
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: transparent;
+    
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer {
+    background-color: hsl(0, 0%, 1%); 
+   color: hsl(120, 17%, 98%);
+    height: 10vh;
+
+  }
+  header{
+    text-align: left;
+    padding-bottom: 50px;
+
+  }
+
+ nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+nav a { /*is used to style nav anchor elements.*/
+    text-decoration: none;/* Remove underlines from links */
+    color: rgb(8, 8, 8);
+    transition: color 0.3s;
+    font-weight: lighter;
+}
+a:hover {
+    color: hsl(0, 0%, 55%); /* Change the text color on hover */
+    
+}
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+.designer {
+    position: absolute; 
+    top: 290px; 
+    left: 140px; 
+    z-index: 3; 
+    margin: 0;
+    color: #333333;
+    text-rendering: optimizelegibility;
+    font-weight: normal;
+}
+
+.coder {
+    position: absolute; 
+    top: 290px; 
+    left: 827px; 
+    z-index: 3;
+    margin: 0;
+    color: #333333;
+    text-rendering: optimizelegibility;
+    font-weight: normal;
+}
+
+
 
 p {
-    font-size: 30px; /* Default font size */
+    opacity: 0.5; /* Change the opacity to 50% (semi-transparent) */
 }
 
+nav {
+   /* background-color: #333;*/
+    color: white;
+    text-align: center; /* Center text within the element */
+}
+
+
+
+nav li {
+    display: inline; /* Make the element inline */
+    margin: 0 10px;
+}
+
+header a { /*is used to style nav anchor elements.*/
+    text-decoration: none;/* Remove underlines from links */
+    color: hsl(0, 0%, 100%);
+    transition: color 0.3s;
+    font-weight: lighter;
+}
+.social li {
+    display: inline-block;
+    border: 0;
+    margin-top: 1rem;
+    margin-left: 2.4rem;
+    height: 3.2rem;
+} 
+        
 
 /* CSS styles for the about page starts here */
-#about header {
-    font-weight: 300;
-    font-size: 2;
-}
-section {
-    border-top: 1px solid #0b0b0b;
-    font-size: 16px;
-}
-* {
-    box-sizing: border-box;
-}
-section {
-    display: block;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-main {
-    min-height: 100vh;
-    padding: 25px 24px 96px;
-    color: rgb(5, 5, 5);
-    font-size: 25px;
+#about-img{
+    position: absolute; 
+    top: 165px; 
+    left: 800px; 
+    z-index: 3; 
+    margin: 0;  
 }
 
-.float-right {
-    float: right;
-    margin: 0 0 10px 10px; /* Adjust the margin to create space around the image */
+#h1{
+    font-size: 96px;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    margin-bottom: 0.8rem;
 }
+#about{
+        position: absolute; 
+        top: 100px; 
+        left: 250px; 
+        z-index: 3; 
+        margin: 0;
+        color: #333333;
+        text-rendering: optimizelegibility;
+        font-weight: normal;
+    }
 
-p {
-    font-size: 20px;
+.image-box {
+    position: absolute; 
+    top: 360px; 
+    left: 200px; 
+    z-index: 3; 
+    margin: 0;
 }
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    text-align: left;
-    color: black;
+.image-box2 {
+    position: absolute; 
+    top: 360px; 
+    left: -5px; 
+    z-index: 3; 
+    margin: 0;
+}
+.image-box3 {
+    position: absolute; 
+    top: 360px; 
+    left: -210px; 
+    z-index: 3; 
+    margin: 0;
 }
 
 /* CSS styles for the portfolio page starts here */
-* {
-    box-sizing: border-box;
-}
-div {
-    display: block;
-}
-.project {
-    background: #d1cdcd;
-    color: #222;
-    margin: 10px auto;
-    padding: 1px;
-}
-/* CSS styles for the portfolio page starts here */
-footer {
-    background-color: #333; /* Background color of the footer */
-    color: white; /* Text color of the footer */
-    padding: 10px; /* Padding inside the footer */
-    border-top: 2px solid #333; /* Border at the top of the footer */
+.image-boxA {
+    position: absolute; 
+    top: -50px; 
+    left: 400px; 
+    z-index: 3; 
+    margin: 0;
 }
 
-footer .media-link {
-    height: 45px;
+.image-boxB {
+    position: absolute; 
+    top: 160px; 
+    left: 300px; 
+    z-index: 3; 
+    margin: 0;
 }
+.image-boxC {
+    position: absolute; 
+    top: 260px; 
+    left: 410px; 
+    z-index: 3; 
+    margin: 0;
+}
+#portfolio{
+    position: absolute; 
+    top: 100px; 
+    left: 150px; 
+    z-index: 3; 
+    margin: 0;
+    color: #333333;
+    text-rendering: optimizelegibility;
+    font-weight: normal;
+}
+
 
 /* CSS styles for the contact page starts here */
+#email-container{
+    position: absolute; 
+    top: 400px; 
+    left: 120px; 
+    z-index: 3; 
+    margin: 0;
+    color: #333333;
+    text-rendering: optimizelegibility;
+    font-weight: normal;
+}
+
+
+
+
 /* Default styling for the submit button */
 #submit-button {
     background-color: #3a3b3a; /* Background color */
@@ -122,7 +238,7 @@ footer .media-link {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1px;
+    font-size: 10px;
     margin: 10px 0;
     cursor: pointer;
 }
@@ -131,3 +247,5 @@ footer .media-link {
 #submit-button:hover {
     background-color: #45a049; /* New background color on hover */
 }
+
+/*@media only screen and (min-width: 428px)
